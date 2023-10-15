@@ -1,7 +1,9 @@
 import { styled } from 'styled-components';
 
 export const Container = styled.div`
-  width: 500px;
+  @media (min-width: 768px) {
+    width: 500px;
+  }
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(13, 33, 70, 0.7);

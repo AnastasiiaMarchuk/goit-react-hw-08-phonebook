@@ -5,7 +5,6 @@ export const Section = styled.section`
   backdrop-filter: blur(5.1px);
   -webkit-backdrop-filter: blur(5.1px);
   color: rgba(13, 33, 70, 0.8);
-  width: 1200px;
   margin: 50px auto 0;
   border-radius: 8px;
 `;
@@ -21,17 +20,17 @@ export const TitleWrapper = styled.div`
 `;
 
 export const SearchSection = styled.div`
-  display: flex;
-  gap: 30px;
+  @media (min-width: 1200px) {
+    display: flex;
+    gap: 30px;
+  }
 `;
 
 export const Container = styled.div`
-  width: 600px;
   padding: 30px;
 `;
 
 export const ContactsSection = styled.section`
-  width: 100%;
   padding: 10px 30px;
   h2 {
     font-size: 28px;

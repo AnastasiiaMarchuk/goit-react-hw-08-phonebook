@@ -7,6 +7,7 @@ import { refreshUser } from 'redux/auth/operations';
 import { Loader } from 'components/Loader/Loader';
 import RestrictedRoute from 'components/RestrictedRoute';
 import PrivateRoute from 'components/PrivateRoute';
+import { Background, Container } from './App.styled';
 
 const HomePage = lazy(() => import('pages/HomePage/HomePage'));
 const RegisterPage = lazy(() => import('pages/RegisterPage/RegisterPage'));
@@ -24,7 +25,8 @@ export const App = () => {
   return isRefreshing ? (
     <Loader />
   ) : (
-    <>
+    <Container>
+      <Background />
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<HomePage />} />
@@ -54,6 +56,6 @@ export const App = () => {
           />
         </Route>
       </Routes>
-    </>
+    </Container>
   );
 };

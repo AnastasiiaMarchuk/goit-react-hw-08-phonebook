@@ -5,10 +5,13 @@ export const Container = styled.div`
   align-items: center;
   gap: 20px;
   p {
-    font-size: 20px;
+    font-size: 16px;
     color: #ffffff;
     @media (max-width: 380px) {
       display: none;
+    }
+    @media (min-width: 1200px) {
+      font-size: 20px;
     }
   }
   button {

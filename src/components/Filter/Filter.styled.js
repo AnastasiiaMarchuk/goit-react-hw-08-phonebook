@@ -2,12 +2,17 @@ import { styled } from 'styled-components';
 
 export const Wrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   position: relative;
   label {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 600;
     color: #ffffff;
+    width: 100%;
+    @media (min-width: 768px) {
+      font-size: 28px;
+    }
   }
   input {
     margin-top: 12px;
@@ -28,7 +33,7 @@ export const Wrapper = styled.div`
     right: 5px;
     margin-top: 13px;
     transform: translateY(-50%);
-    background-color: transparent;
+    background-color: #fff;
     border: none;
     cursor: pointer;
     &:hover {

@@ -1,11 +1,14 @@
 import { styled } from 'styled-components';
 
 export const Title = styled.p`
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 600;
   color: #ffffff;
   margin-bottom: 16px;
   margin-top: 10px;
+  @media (min-width: 768px) {
+    font-size: 28px;
+  }
 `;
 
 export const Form = styled.form`

@@ -1,40 +1,20 @@
 import { styled } from 'styled-components';
-
-export const Section = styled.section`
-  background-color: rgba(13, 33, 70, 0.7);
-  color: rgba(13, 33, 70, 0.8);
-  width: 1200px;
-  margin: 50px auto 0;
-  border-radius: 8px;
-`;
-
-export const TitleWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  h1 {
-    color: #fff;
-    padding: 18px 6px 18px 18px;
-    margin: 0;
-  }
-`;
-
-export const SearchSection = styled.div`
-  display: flex;
-  gap: 30px;
-`;
+import { commonContainerStyles } from 'styles/GlobalStyles';
+import background from '../../styles/images/background.jpg';
 
 export const Container = styled.div`
-  width: 600px;
-  padding: 30px;
+  ${commonContainerStyles}
 `;
 
-export const ContactsSection = styled.section`
+export const Background = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 10px 30px;
-  h2 {
-    font-size: 28px;
-    font-weight: 600;
-    color: #ffffff;
-    margin: 20px 0 10px;
-  }
+  height: 100%;
+  background-image: url(${background});
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: -1;
 `;

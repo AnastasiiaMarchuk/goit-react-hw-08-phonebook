@@ -7,12 +7,15 @@ export const List = styled.ul`
   margin-top: 16px;
   li {
     display: flex;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     color: #ffffff;
     margin-bottom: 8px;
     width: 100%;
     gap: 10px;
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
   }
 
   p {
