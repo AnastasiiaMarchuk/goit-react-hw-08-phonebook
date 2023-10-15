@@ -1,10 +1,10 @@
 import { useDispatch } from 'react-redux';
 import { register as registerUser } from 'redux/auth/operations';
-import { Container, Form, Mess, Span, Title } from './RegisterForm.styled';
+import { Container, Form, Title } from './RegisterForm.styled';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthNav } from 'components/AuthNav/AuthNav';
 
