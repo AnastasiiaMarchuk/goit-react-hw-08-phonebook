@@ -1,9 +1,9 @@
 import { FiTrash } from 'react-icons/fi';
 import { BsPersonCircle } from 'react-icons/bs';
 import { List, Message, TitlesWrapper, Wrapper } from './ContactList.styled';
-import { useContacts, useFilter } from 'redux/hooks/UseContacts';
 import { useEffect } from 'react';
 import { Loader } from 'components/Loader/Loader';
+import { useContacts, useFilter } from 'redux/hooks/UseContacts';
 
 export const ContactList = () => {
   const { removeContact, contacts, getContacts, isLoading, error } =
@@ -21,7 +21,6 @@ export const ContactList = () => {
   const newList = contacts.filter(contact =>
     contact.name.toLowerCase().includes(filter)
   );
-  console.log('df', newList);
 
   const noContactsMessage = filter
     ? 'No contact with this name'

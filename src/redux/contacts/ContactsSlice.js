@@ -19,7 +19,7 @@ const initialState = {
   error: null,
 };
 
-const contactsSlice = createSlice({
+export const contactsSlice = createSlice({
   name: 'contacts',
   initialState,
   extraReducers: builder =>
@@ -40,5 +40,3 @@ const contactsSlice = createSlice({
         state.error = null;
       }),
 });
-
-export const contactsReducer = contactsSlice.reducer;
